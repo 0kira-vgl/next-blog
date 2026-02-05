@@ -16,15 +16,14 @@ export function ActiveLink({ children, href, ...rest }: ActiveLinkProps) {
   const router = useRouter();
   const isCurrentPath =
     router.asPath === href || // asPath = caminho atual da URL
-    router.asPath === rest.as ||
-    router.asPath.startsWith(String(rest.as));
+    router.asPath === rest.as;
 
   return (
     <Link
       href="/"
       className={cn(
-        "hover:text-primary text-sm font-medium transition-colors",
-        isCurrentPath ? "text-blue-500" : "text-muted-foreground",
+        "text-action-sm transition-colors hover:text-blue-200",
+        isCurrentPath ? "text-blue-200" : "text-gray-100",
       )}
     >
       {children}
