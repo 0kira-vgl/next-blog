@@ -1,3 +1,4 @@
+import { Feature } from "@/components/feature";
 import { Hero } from "@/components/hero";
 
 export default function Home() {
@@ -5,6 +6,7 @@ export default function Home() {
     <>
       <article className="flex flex-col">
         <Hero />
+        <Feature />
       </article>
     </>
   );

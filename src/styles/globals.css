@@ -70,6 +70,10 @@
   --text-body-xs--line-height: 150%;
   --text-body-xs--font-weight: 400;
 
+  --text-body-tag: 12px;
+  --text-body-tag--line-height: 100%;
+  --text-body-tag--font-weight: 400;
+
   /* Action - Inter */
   --text-action-md: 16px;
   --text-action-md--font-weight: 500;
