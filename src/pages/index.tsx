@@ -1,3 +1,4 @@
+import { CustomerStory } from "@/components/customerStory";
 import { Feature } from "@/components/feature";
 import { Hero } from "@/components/hero";
 import { Support } from "@/components/support";
@@ -9,6 +10,7 @@ export default function Home() {
         <Hero />
         <Feature />
         <Support />
+        <CustomerStory />
       </article>
     </>
   );
