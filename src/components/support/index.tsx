@@ -1,18 +1,12 @@
 import { HeartHandshake, PaintbrushVertical, Store } from "lucide-react";
-import { PT_Sans_Caption } from "next/font/google";
-
-const ptSansCaption = PT_Sans_Caption({
-  subsets: ["latin"],
-  weight: "700",
-});
 
 export function Support() {
   return (
-    <section className="container bg-gray-700 pb-8 md:py-10">
-      <div className="flex flex-col items-center gap-12">
-        <h2
-          className={`${ptSansCaption.className} text-heading-xl text-center text-balance text-gray-100`}
-        >
+    <section className="relative bg-gray-700 pb-8 md:py-10">
+      <div className="absolute inset-0 hidden bg-[url('/assets/bg-support.svg')] bg-cover bg-center bg-no-repeat opacity-90 md:block" />
+
+      <div className="relative container flex flex-col items-center gap-12">
+        <h2 className="text-heading-xl text-center text-balance text-gray-100">
           Sua loja de afiliados, simples, do jeito que deveria ser
         </h2>
 

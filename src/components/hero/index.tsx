@@ -8,7 +8,7 @@ export function Hero() {
     <section className="relative container mt-16 flex items-center justify-center">
       <div className="grid min-h-80 grid-cols-1 items-center gap-8 md:h-144 md:grid-cols-2">
         <div className="flex flex-col items-center justify-center gap-4 md:items-start lg:items-start">
-          <h1 className="text-heading-hg text-gray-100">
+          <h1 className="text-heading-hg font-sans text-gray-100">
             Venda seus produtos como afiliado em um único lugar
           </h1>
 

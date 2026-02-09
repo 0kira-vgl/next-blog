@@ -10,7 +10,7 @@ export function Feature() {
         <span className="text-body-tag w-fit rounded-sm bg-blue-400 px-2 py-1 text-blue-200 uppercase">
           Simples
         </span>
-        <h2 className="text-heading-lg text-gray-100">
+        <h2 className="text-heading-lg font-sans text-gray-100">
           Crie um catálogo de produtos online em poucos minutos
         </h2>
       </div>
@@ -19,7 +19,7 @@ export function Feature() {
         <span className="text-body-tag w-fit rounded-sm bg-blue-400 px-2 py-1 text-blue-200 uppercase">
           Prático
         </span>
-        <h2 className="text-heading-lg text-gray-100">
+        <h2 className="text-heading-lg font-sans text-gray-100">
           Venda para seu público através de uma plataforma única
         </h2>
       </div>
@@ -30,7 +30,7 @@ export function Feature() {
             <span className="text-body-tag w-fit rounded-sm bg-blue-400 px-2 py-1 text-blue-200 uppercase">
               Personalizável
             </span>
-            <h2 className="text-heading-lg text-gray-100">
+            <h2 className="text-heading-lg font-sans text-gray-100">
               Tenha uma loja online personalizada com a cara da sua marca
             </h2>
 
