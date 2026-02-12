@@ -35,9 +35,19 @@ export const Post = defineDocumentType(() => ({
   computedFields: {
     slug: {
       type: "string",
+      // cria automaticamente o "slug" do post
+      // usando o nome do arquivo markdown
+      // ex: "meu-post.md" → slug = "meu-post"
       resolve: (doc) => doc._raw.sourceFileName.replace(".md", ""),
     },
   },
 }));
 
-export default makeSource({ contentDirPath: "posts", documentTypes: [Post] });
+export default makeSource({
+  // pasta onde ficam os arquivos de conteúdo (.md). Nesse caso: /posts
+  contentDirPath: "posts",
+
+  // tipos de documentos que o Contentlayer vai gerar
+  // aqui estamos dizendo que todo .md dessa pasta deve seguir o schema definido em "Post"
+  documentTypes: [Post],
+});
