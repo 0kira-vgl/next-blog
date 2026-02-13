@@ -43,7 +43,10 @@ export function PostCard({
         </div>
 
         <div className="mt-4 space-y-4 px-2">
-          <h2 className="text-heading-sm line-clamp-2 text-gray-100">
+          <h2
+            className="text-heading-sm line-clamp-2 text-gray-100"
+            title={title}
+          >
             {title}
           </h2>
 

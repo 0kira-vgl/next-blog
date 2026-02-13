@@ -23,7 +23,7 @@ export function BlogList() {
   return (
     <div className="flex h-full grow flex-col pt-24">
       <header className="pb-14">
-        <div className="container flex flex-col items-start justify-between space-y-6 md:flex-row md:items-end lg:items-end">
+        <div className="container flex flex-col items-end justify-between space-y-6 md:flex-row md:items-end md:space-y-0 lg:items-end lg:space-y-0">
           <div className="flex flex-col gap-4 md:px-0">
             <span className="text-body-tag w-fit rounded-md bg-cyan-300 px-4 py-2 text-center text-cyan-100 md:text-left">
               BLOG
