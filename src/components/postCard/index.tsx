@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Avatar } from "@/components/avatar";
 
 type Author = {
   name: string;
@@ -55,16 +56,12 @@ export function PostCard({
           </p>
 
           <div className="flex items-center gap-3 border-t border-gray-400 py-4">
-            <div className="relative size-5 overflow-hidden rounded-full border border-blue-200 md:size-6">
-              <Image
-                src={author.avatar}
-                alt="user-avatar"
-                fill
-                className="rounded-md object-cover"
-              />
-            </div>
-
-            <span className="text-body-sm text-gray-300">{author.name}</span>
+            <Avatar.Container>
+              <Avatar.Image src={author.avatar} alt={author.name} />
+              <Avatar.Content>
+                <Avatar.Title>{author.name}</Avatar.Title>
+              </Avatar.Content>
+            </Avatar.Container>
           </div>
         </div>
       </div>
