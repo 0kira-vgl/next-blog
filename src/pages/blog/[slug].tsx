@@ -7,6 +7,7 @@ import {
   BreadcrumbLink,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
+import { Button } from "@/components/ui/button";
 import { allPosts } from "contentlayer/generated";
 import Image from "next/image";
 import Link from "next/link";
@@ -80,6 +81,29 @@ export default function PostPage() {
               <Markdown content={post.body.raw} />
             </div>
           </article>
+
+          <aside className="space-y-6">
+            <div className="rounded-lg bg-gray-700 p-4 md:p-6">
+              <h2 className="text-heading-xs mb-4 text-gray-100">
+                Compartilhar
+              </h2>
+
+              <div className="space-y-6">
+                {[
+                  { key: "1", providerName: "Linkedin" },
+                  { key: "2", providerName: "Facebook" },
+                ].map((provider) => (
+                  <Button
+                    key={provider.key}
+                    variant="outline"
+                    className="w-full justify-start gap-2"
+                  >
+                    {provider.providerName}
+                  </Button>
+                ))}
+              </div>
+            </div>
+          </aside>
         </div>
       </div>
     </main>
