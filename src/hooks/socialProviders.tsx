@@ -6,11 +6,15 @@ export type ShareConfig = {
   text?: string;
 };
 
+export type SocialProvider = "linkedin" | "facebook" | "slack" | "twitter";
+
 export const socialProviders = {
   linkedin: {
     name: "Linkedin",
     icon: <Linkedin className="size-4" />,
     shareUrl: (config: ShareConfig) =>
+      // encodeURIComponent garante que a URL/texto seja codificado corretamente,
+      // evitando que caracteres como ?, &, = ou espaços quebrem os parâmetros da URL.
       `https://www.linkedin.com/sharing/share-offsite/?url${encodeURIComponent(config.url)}`,
   },
   facebook: {
